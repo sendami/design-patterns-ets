@@ -35,6 +35,6 @@ public class MailardDuckTest {
 
     @Test
     public void shouldFly() {
-        assertEquals("Mailard duck flying!", duck.fly());
+        assertEquals("flying!!", duck.fly());
     }
 }

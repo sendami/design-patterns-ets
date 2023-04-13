@@ -3,20 +3,18 @@ package org.tw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class RedheadDuckTest {
-    RedheadDuck duck;
+public class RubberDuckTest {
+    RubberDuck duck;
     @BeforeEach
     public void setup() {
-        duck = new RedheadDuck();
+        duck = new RubberDuck();
     }
     @Test
     public void shouldQuack() {
-        assertEquals("quack!", duck.quack());
+        assertEquals("squeak!!", duck.quack());
     }
-
-
     @Test
     public void shouldSwim() {
         assertEquals("swimming!!", duck.swim());
@@ -24,11 +22,11 @@ public class RedheadDuckTest {
 
     @Test
     public void shouldDisplay() {
-        assertEquals("Display RedheadDuck!", duck.display());
+        assertEquals("Display Rubber duck!", duck.display());
     }
 
     @Test
     public void shouldFly() {
-        assertEquals("flying!!", duck.fly());
+       assertNull(duck.fly());
     }
 }
