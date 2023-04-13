@@ -8,7 +8,16 @@ public abstract class Duck {
         return "swimming!!";
     }
 
+
     public abstract String display();
+
+    public void setFlyBehaviour(FlyBehaviour fb) {
+        this.flyBehaviour = fb;
+    }
+
+    public void setQuackBehaviour(QuackBehaviour qb) {
+        this.quackBehaviour = qb;
+    }
 
     public String performFly(){
         return flyBehaviour.fly();
