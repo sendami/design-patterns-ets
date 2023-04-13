@@ -25,8 +25,4 @@ public class RubberDuckTest {
         assertEquals("Display Rubber duck!", duck.display());
     }
 
-    @Test
-    public void shouldFly() {
-       assertNull(duck.fly());
-    }
 }

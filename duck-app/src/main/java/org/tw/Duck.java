@@ -4,9 +4,6 @@ public abstract class Duck {
 
     public Duck() {
     }
-    public String quack(){
-        return "quack!";
-    }
 
     public String swim(){
         return "swimming!!";
@@ -14,8 +11,4 @@ public abstract class Duck {
 
 
     public abstract String display();
-
-    public String fly() {
-        return "flying!!";
-    }
 }
