@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class DecoyDuckTest {
-    DecoyDuck duck;
+    Duck duck;
     @BeforeEach
     public void setup() {
         duck = new DecoyDuck();
@@ -20,5 +20,15 @@ public class DecoyDuckTest {
     @Test
     public void shouldDisplay() {
         assertEquals("Display Decoy duck!", duck.display());
+    }
+
+    @Test
+    public void shouldNotQuack() {
+        assertNull(duck.performQuack());
+    }
+
+    @Test
+    public void shouldNotFly() {
+        assertNull(duck.performFly());
     }
 }

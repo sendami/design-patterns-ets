@@ -1,14 +1,12 @@
 package org.tw;
 
-public class RedheadDuck extends Duck{
-
-    public RedheadDuck() {
+public class MallardDuck extends Duck{
+    public MallardDuck() {
         quackBehaviour = new Quack();
         flyBehaviour = new FlyWithWings();
     }
     @Override
     public String display() {
-        return "Display RedheadDuck!";
+        return "Display MailardDuck!";
     }
-
 }
