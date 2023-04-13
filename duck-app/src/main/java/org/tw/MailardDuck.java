@@ -5,4 +5,9 @@ public class MailardDuck extends Duck {
     public String display() {
         return "Display MailardDuck!";
     }
+
+    @Override
+    public String fly() {
+        return "Mailard duck flying!";
+    }
 }

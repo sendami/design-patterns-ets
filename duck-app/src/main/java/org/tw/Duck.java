@@ -14,4 +14,6 @@ public abstract class Duck {
 
 
     public abstract String display();
+
+    public abstract String fly();
 }
