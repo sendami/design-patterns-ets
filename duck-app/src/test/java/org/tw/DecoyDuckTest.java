@@ -1,4 +1,5 @@
 package org.tw;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,5 +20,15 @@ public class DecoyDuckTest {
     @Test
     public void shouldDisplay() {
         assertEquals("Display Decoy duck!", duck.display());
+    }
+
+    @Test
+    public void shouldNotQuack() {
+        assertNull(duck.performQuack());
+    }
+
+    @Test
+    public void shouldNotFly() {
+        assertNull(duck.performFly());
     }
 }

@@ -1,14 +1,14 @@
 package org.tw;
 
-public class RedheadDuck extends Duck implements Quackable, Flyable{
+public class RedheadDuck extends Duck{
+
+    public RedheadDuck() {
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
+    }
     @Override
     public String display() {
         return "Display RedheadDuck!";
     }
-    public String quack(){
-        return "quack!";
-    }
-    public String fly() {
-        return "flying!";
-    }
+
 }

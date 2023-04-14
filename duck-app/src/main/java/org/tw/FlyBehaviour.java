@@ -1,5 +1,5 @@
 package org.tw;
 
-public interface Flyable {
+public interface FlyBehaviour {
     public String fly();
 }

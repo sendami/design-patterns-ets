@@ -1,16 +1,12 @@
 package org.tw;
 
-public class MallardDuck extends Duck implements Flyable, Quackable {
+public class MallardDuck extends Duck{
+    public MallardDuck() {
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
+    }
     @Override
     public String display() {
-        return "Display MallardDuck!";
-    }
-
-    public String quack(){
-        return "quack!";
-    }
-
-    public String fly() {
-        return "flying!";
+        return "Display MailardDuck!";
     }
 }

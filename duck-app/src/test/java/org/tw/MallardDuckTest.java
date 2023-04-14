@@ -6,10 +6,15 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MallardDuckTest {
-    MallardDuck duck;
+    Duck duck;
     @BeforeEach
     public void setup() {
         duck = new MallardDuck();
+    }
+
+    @Test
+    public void shouldQuack() {
+        assertEquals("quack!", duck.performQuack());
     }
 
     @Test
@@ -19,11 +24,11 @@ public class MallardDuckTest {
 
     @Test
     public void shouldDisplay() {
-        assertEquals("Display MallardDuck!", duck.display());
+        assertEquals("Display MailardDuck!", duck.display());
     }
 
     @Test
     public void shouldFly() {
-        assertEquals("flying!", duck.fly());
+        assertEquals("flying!!", duck.performFly());
     }
 }

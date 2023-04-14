@@ -1,6 +1,5 @@
 package org.tw;
 
-public interface Quackable {
-
+public interface QuackBehaviour {
     public String quack();
 }
