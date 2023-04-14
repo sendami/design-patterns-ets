@@ -12,6 +12,7 @@ public abstract class Duck {
         return "swimming!!";
     }
 
+    public String fly() {return "flying!";}
 
     public abstract String display();
 }

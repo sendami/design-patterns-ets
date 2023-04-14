@@ -28,4 +28,9 @@ public class RedheadDuckTest {
     public void shouldDisplay() {
         assertEquals("Display RedheadDuck!", duck.display());
     }
+
+    @Test
+    public void shouldFly() {
+        assertEquals("flying!", duck.fly());
+    }
 }
