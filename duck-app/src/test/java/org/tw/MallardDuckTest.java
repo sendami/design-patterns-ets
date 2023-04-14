@@ -1,30 +1,29 @@
 package org.tw;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.tw.MailardDuck;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MailardDuckTest {
+public class MallardDuckTest {
+    Duck duck;
+    @BeforeEach
+    public void setup() {
+        duck = new MallardDuck();
+    }
 
     @Test
     public void shouldQuack() {
-        MailardDuck duck = new MailardDuck();
-
         assertEquals("quack!", duck.quack());
     }
 
     @Test
     public void shouldSwim() {
-        MailardDuck duck = new MailardDuck();
-
         assertEquals("swimming!!", duck.swim());
     }
 
     @Test
     public void shouldDisplay() {
-        MailardDuck duck = new MailardDuck();
-
-        assertEquals("Display MailardDuck!", duck.display());
+        assertEquals("Display MallardDuck!", duck.display());
     }
 }
