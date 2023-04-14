@@ -12,10 +12,6 @@ public class DecoyDuckTest {
         duck = new DecoyDuck();
     }
     @Test
-    public void shouldNotQuack() {
-        assertNull(duck.quack());
-    }
-    @Test
     public void shouldSwim() {
         assertEquals("swimming!!", duck.swim());
     }
@@ -23,10 +19,5 @@ public class DecoyDuckTest {
     @Test
     public void shouldDisplay() {
         assertEquals("Display Decoy duck!", duck.display());
-    }
-
-    @Test
-    public void shouldNotFly() {
-        assertNull(duck.fly());
     }
 }

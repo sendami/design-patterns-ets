@@ -7,8 +7,7 @@ import org.tw.RedheadDuck;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RedheadDuckTest {
-    Duck duck;
-
+    RedheadDuck duck;
     @BeforeEach
     public void setup() {
         duck = new RedheadDuck();

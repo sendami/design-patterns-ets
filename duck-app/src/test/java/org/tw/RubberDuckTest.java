@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RubberDuckTest {
-    Duck duck;
+    RubberDuck duck;
 
     @BeforeEach
     public void setup() {
@@ -26,10 +26,5 @@ public class RubberDuckTest {
     @Test
     public void shouldDisplay() {
         assertEquals("Display Rubber duck!", duck.display());
-    }
-
-    @Test
-    public void shouldNotFly() {
-        assertNull(duck.fly());
     }
 }
